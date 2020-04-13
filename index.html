@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title id="text"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,600,600i,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lekton:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script type="text/javascript">
+
+      var string = "SY_PARK"; /* type your text here */
+      var array = string.split("");
+      var timer;
+
+      function frameLooper () {
+      	if (array.length > 0) {
+      		document.getElementById("text").innerHTML += array.shift();
+      	} else {
+      		clearTimeout(timer);
+      			}
+      	loopTimer = setTimeout('frameLooper()',200); /* change 70 for speed */
+
+      }
+      frameLooper();
+
+    </script>
+    <style media="screen">
+      /* .full_overlay_left{position:fixed; width:100%; height:100%; background:linear-gradient(to right, #4e54c8, #8f94fb); _left:-500px; top:0;z-index:999999; animation:overlay 3s 1; animation-fill-mode:forwards;} */
+      /* .full_overlay_left .inner{position:absolute; width:300px; height:300px; border-radius:50%; bottom:0; left:50%; background:#fff; animation: move 1s 1; animation-fill-mode:forwards; animation-delay:0.2s;} */
+      /* .full_overlay_left{position:fixed; width:80%; height:100%; background:#ddd; left:-500px; top:0;z-index:999999; animation:overleft 1s 1; animation-delay:0.5s; animation-fill-mode:forwards; transform:skewX(-45deg);}
+      .full_overlay_right{position:fixed; width:80%; height:100%; background:#000; right:-653px; top:0;z-index:999999; animation:overright 1s 1; animation-delay:0.5s; animation-fill-mode:forwards; transform:skewX(-45deg);} */
+      @keyframes overlay{
+        0%{opacity:1;}
+        40%{opacity:1;}
+        100%{opacity:0;}
+      }
+      /* @keyframes move{
+        0%{bottom:0;}
+        100%{bottom:1500px;}
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="full_overlay_left">
+      <div class="inner">
+
+      </div>
+    </div>
+    <div id="fullpage">
+
+      <div class="wrap">
+
+
+
+      <div class="overlay"></div>
+
+      <header class="header" id="header" >
+        <div class="top">
+          <h1>
+            <a href="#">sangyeon park</a>
+          </h1>
+          <p>안녕하세요 : ) 박상연입니다.</p>
+        </div>
+        <div class="left">
+          <div class="burger">
+            <div class="menu_btn over">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="cation over">MENU</div>
+          </div>
+          <div class="menu_list">
+            <ul>
+              <li>
+                <a href="index.html#1st">ABOUT</a>
+              </li>
+              <li>
+                <a href="index.html#2nd">SKILL</a>
+              </li>
+              <li>
+                <a href="index.html#3rd/1">PORTFOLIO</a>
+                <ul class="portfolio_list">
+                  <li><a href="index.html#3rd/1">.BREEZED</a></li>
+                  <li><a href="index.html#3rd/1">MAMMOTH</a></li>
+                  <li><a href="#">PORTFOLIO</a></li>
+                  <li><a href="#">web 기획/제작 </a></li>
+                  <li><a href="#">app 기획</a></li>
+                  <li><a href="#">LOTTE DEPARTMENT</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="index.html#4th">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="bottom">
+          <div class="">
+
+          </div>
+
+        </div>
+        <div class="right">
+          <div class="">
+
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <section class="page_1 section" data-anchor="1st">
+        <div class="page_1_inner">
+          <div class="bg">
+            <div class="idcard">
+              <div id="t">
+                #sangyeon portfolio<br>
+                what i do >>>><br>
+                #web_publisher<br>
+                birth >> 29/10/1994<br>
+                e-mail >> bbangsang10@gmail.com<br>
+                Read my resume here : <a href="#" style="color:blue; text-decoration:underline; font-weight:bold;">pdf</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page_2 section" data-anchor="2nd">
+        <div class="page_2_inner clear">
+          <div class="content_title">
+            <h2 class="main_tit">skills</h2>
+            <p class="line">//</p>
+            <p>Towards Standards, Basics and Users</p>
+          </div>
+          <div class="content_box clear">
+            <div class="cont">
+              <h4>html</h4>
+              <div class="chart" data-percent="85">
+                <span class="title">85%</span>
+              </div>
+            </div>
+            <div class="cont">
+              <h4>css</h4>
+              <div class="chart" data-percent="85">
+                <span class="title">85%</span>
+              </div>
+            </div>
+            <div class="cont">
+              <h4>java script / jquery</h4>
+              <div class="chart" data-percent="65">
+                <span class="title">65%</span>
+              </div>
+            </div>
+            <div class="cont">
+              <h4>photoshop / illustrator</h4>
+              <div class="chart" data-percent="70">
+                <span class="title">70%</span>
+              </div>
+            </div>
+            <div class="cont">
+              <h4>PHP + SQL</h4>
+              <div class="chart" data-percent="45">
+                <span class="title">45%</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="page_3 section" data-anchor="3rd">
+        <div class="page_3_inner">
+          <div class="slide">
+            <div class="content_title">
+              <h2 class="main_tit">portfolio</h2>
+            </div>
+            <div class="sixteen clear">
+              <div class="sixteen_img clear">
+                <div class="imac">
+                  <div class="screen">
+                    <div class="screen_box">
+                      <div class="viewport breezed">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="iphone">
+                  <div class="screen_m">
+                    <div class="screen_box_m">
+                      <div class="viewport_m m_breezed">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="desc">
+                <div class="desc_box clear">
+                  <p class="desc_title">.BREEZED</p>
+                  <em>update : 2020-04-07</em>
+                  <b>Description</b>
+                  <p class="desc_txt">회원가입, 로그인이 가능한 페이지 제작 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
+                  <i>Front-End + Back-End</i>
+                  <b>Teck Stack</b>
+                  <i>html</i>
+                  <i>css</i>
+                  <i>javascript / jquery</i>
+                  <i>json</i>
+                  <i>ajax</i>
+                  <i>php</i>
+                  <i>sql</i>
+                  <a href="#" class="detail_btn">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="content_title">
+              <h2 class="main_tit">portfolio</h2>
+              <!-- <p class="line">//</p> -->
+            </div>
+            <div class="sixteen clear">
+              <div class="sixteen_img clear">
+                <div class="imac">
+                  <div class="screen">
+                    <div class="screen_box">
+                      <div class="viewport mammoth">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="iphone">
+                  <div class="screen_m">
+                    <div class="screen_box_m">
+                      <div class="viewport_m m_mammoth">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="desc">
+                <div class="desc_box clear">
+                  <p class="desc_title">MAMMOTH COFFEE</p>
+                  <em>update : 2020-04-07</em>
+                  <b>Description</b>
+                  <p class="desc_txt">기존에 있는 매머드커피 사이트를 리뉴얼 함. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
+                  <i>web_renewal</i>
+                  <b>Teck Stack</b>
+                  <i>html</i>
+                  <i>css</i>
+                  <i>javascript / jquery</i>
+                  <a href="#" class="detail_btn">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page_4 section" data-anchor="4th">
+        <div class="page_4_inner">
+          <div class="content_title">
+            <h2 class="main_tit">contact</h2>
+            <p class="line">//</p>
+            <p>I want to work with you.</p>
+          </div>
+          <div class="phone_num">
+            <p> +82 01 0000 0000</p>
+          </div>
+          <div class="email">
+            <div class="emailInfo">
+              <p id="text1">bbangsang10@gmail.com</p>
+            </div>
+            <div class="click_box">
+              <div class="send_email">
+                <a href="mailto:bbangsang10@gmail.com" title="메일보내기">
+                  <span><i class="fa fa-envelope-o"></i>Send an e-mail</span>
+                </a>
+              </div>
+              <div class="copy_email tooltip" >
+                <span class="msg" onclick="copyToClipboard('text1')"><i class="fa fa-clone"></i>Copy e-mail address</span>
+                <div class="tooltip-content">
+			            <p>Copied Successful</p>
+		             </div>
+              </div>
+            </div>
+            <div class="resume">
+              <p>Read my resume here</p>
+              <a href="#">GitHub</a>
+              <a href="#">PDF</a>
+            </div>
+          </div>
+          <div class="kakao_qr">
+            <img src="img/kakao_qr.PNG" alt="">
+          </div>
+
+        </div>
+      </section>
+
+
+      </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.3/jquery.easypiechart.min.js"></script>
+    <script type="text/javascript" src="js/easings.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/fullpage_effect.js"></script>
+    <script type="text/javascript" src="js/t.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+
+// 클립보드로 복사하는 기능을 생성
+  function mgs(){
+    alert("복사되었습니다.");
+  }
+
+      function copyToClipboard(elementId) {
+
+  // 글을 쓸 수 있는 란을 만든다.
+  var aux = document.createElement("input");
+
+  // 지정된 요소의 값을 할당 한다.
+  aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+
+  // bdy에 추가한다.
+  document.body.appendChild(aux);
+
+  // 지정된 내용을 강조한다.
+  aux.select();
+
+  // 텍스트를 카피 하는 변수를 생성
+  document.execCommand("copy");
+
+  // body 로 부터 다시 반환 한다.
+  document.body.removeChild(aux);
+
+}
+</script>
+
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- --- -->
